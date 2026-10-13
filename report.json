@@ -1,0 +1,86 @@
+{
+  "policy_rows": [
+    {
+      "difficulty": "easy",
+      "budget_usd": 0.001,
+      "backend": "local-4bit",
+      "latency_ms": 180,
+      "cost_usd": 0.0,
+      "quality": 0.72
+    },
+    {
+      "difficulty": "easy",
+      "budget_usd": 0.05,
+      "backend": "local-4bit",
+      "latency_ms": 180,
+      "cost_usd": 0.0,
+      "quality": 0.72
+    },
+    {
+      "difficulty": "easy",
+      "budget_usd": 1.0,
+      "backend": "local-4bit",
+      "latency_ms": 180,
+      "cost_usd": 0.0,
+      "quality": 0.72
+    },
+    {
+      "difficulty": "normal",
+      "budget_usd": 0.001,
+      "backend": "hosted-large",
+      "latency_ms": 900,
+      "cost_usd": 0.6,
+      "quality": 0.93
+    },
+    {
+      "difficulty": "normal",
+      "budget_usd": 0.05,
+      "backend": "hosted-small",
+      "latency_ms": 420,
+      "cost_usd": 0.03,
+      "quality": 0.81
+    },
+    {
+      "difficulty": "normal",
+      "budget_usd": 1.0,
+      "backend": "hosted-small",
+      "latency_ms": 420,
+      "cost_usd": 0.03,
+      "quality": 0.81
+    },
+    {
+      "difficulty": "hard",
+      "budget_usd": 0.001,
+      "backend": "hosted-large",
+      "latency_ms": 900,
+      "cost_usd": 0.6,
+      "quality": 0.93
+    },
+    {
+      "difficulty": "hard",
+      "budget_usd": 0.05,
+      "backend": "hosted-large",
+      "latency_ms": 900,
+      "cost_usd": 0.6,
+      "quality": 0.93
+    },
+    {
+      "difficulty": "hard",
+      "budget_usd": 1.0,
+      "backend": "hosted-large",
+      "latency_ms": 900,
+      "cost_usd": 0.6,
+      "quality": 0.93
+    }
+  ],
+  "policy_note": "Backend cost, latency and quality are placeholder constants in router/policy.py, not measurements.",
+  "ollama_probe": {
+    "host": "http://localhost:11434",
+    "cost_usd": null,
+    "quality": null,
+    "cost_note": "not measured: local inference, hardware and power cost not tracked",
+    "quality_note": "not measured: no eval in this probe",
+    "status": "not_measured",
+    "reason": "Ollama not reachable at http://localhost:11434: <urlopen error [Errno 111] Connection refused>"
+  }
+}
